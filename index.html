@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout Form</h1>
+    <form action="checkout.php" method="POST">
+      <!-- Input Alamat Pengiriman -->
+      <h2>Alamat Pengiriman</h2>
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="text" name="alamat" placeholder="Alamat Lengkap" required>
+      <input type="text" name="kota" placeholder="Kota" required>
+      <input type="text" name="provinsi" placeholder="Provinsi" required>
+      <input type="text" name="kodepos" placeholder="Kode Pos" required>
+      <input type="tel" name="telepon" placeholder="Telepon" required>
+
+      <!-- Detail Pesanan -->
+      <h2>Detail Pesanan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Jumlah</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>T-Shirt</td>
+            <td>1</td>
+            <td>Rp 100.000</td>
+          </tr>
+          <tr>
+            <td>Hoodie</td>
+            <td>2</td>
+            <td>Rp 200.000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Tombol Submit -->
+      <button type="submit">Bayar</button>
+    </form>
+  </div>
+</body>
+</html>
